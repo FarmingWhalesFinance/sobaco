@@ -58,8 +58,8 @@ a.btn {
 }
 
 .btn-primary:hover {
-  background: var(--dark-blue-hover);
+  background: #37036d;
 }
 .btn-primary:active {
-  background: var(--dark-blue-active);
+  background: #37036d;
 }

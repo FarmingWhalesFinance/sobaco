@@ -520,16 +520,7 @@ export default function DashboardV2() {
               <Trans>Stats</Trans> {chainId === AVALANCHE && <img src={avalanche24Icon} alt="avalanche24Icon" />}
               {chainId === ARBITRUM && <img src={arbitrum24Icon} alt="arbitrum24Icon" />}
             </div>
-            <div className="Page-description">
-              <Trans>
-                {chainName} Total Stats start from {totalStatsStartDate}.<br /> For detailed stats:
-              </Trans>{" "}
-              {chainId === ARBITRUM && <ExternalLink href="https://stats.gmx.io">https://stats.gmx.io</ExternalLink>}
-              {chainId === AVALANCHE && (
-                <ExternalLink href="https://stats.gmx.io/avalanche">https://stats.gmx.io/avalanche</ExternalLink>
-              )}
-              .
-            </div>
+            
           </div>
         </div>
         <div className="DashboardV2-content">
@@ -546,10 +537,10 @@ export default function DashboardV2() {
                   </div>
                   <div>
                     <TooltipComponent
-                      handle={`$${formatAmount(tvl, USD_DECIMALS, 0, true)}`}
+                      handle={0}
                       position="right-bottom"
                       renderContent={() => (
-                        <span>{t`Assets Under Management: GMX staked (All chains) + GLP pool (${chainName})`}</span>
+                        <span>{t`Assets Under Management: GMX staked (All chains) + GLP pool (0)`}</span>
                       )}
                     />
                   </div>
@@ -560,7 +551,7 @@ export default function DashboardV2() {
                   </div>
                   <div>
                     <TooltipComponent
-                      handle={`$${formatAmount(aum, USD_DECIMALS, 0, true)}`}
+                      handle={0}
                       position="right-bottom"
                       renderContent={() => <span>{t`Total value of tokens in GLP pool (${chainName})`}</span>}
                     />
@@ -574,7 +565,7 @@ export default function DashboardV2() {
                     <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
-                      handle={`$${formatAmount(currentVolumeInfo?.[chainId]?.totalVolume, USD_DECIMALS, 0, true)}`}
+                      handle={0}
                       renderContent={() => (
                         <StatsTooltip
                           title={t`Volume`}
@@ -594,12 +585,7 @@ export default function DashboardV2() {
                     <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
-                      handle={`$${formatAmount(
-                        positionStatsInfo?.[chainId]?.totalLongPositionSizes,
-                        USD_DECIMALS,
-                        0,
-                        true
-                      )}`}
+                      handle={0}
                       renderContent={() => (
                         <StatsTooltip
                           title={t`Long Positions`}
@@ -619,12 +605,7 @@ export default function DashboardV2() {
                     <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
-                      handle={`$${formatAmount(
-                        positionStatsInfo?.[chainId]?.totalShortPositionSizes,
-                        USD_DECIMALS,
-                        0,
-                        true
-                      )}`}
+                      handle={0}
                       renderContent={() => (
                         <StatsTooltip
                           title={t`Short Positions`}
@@ -645,7 +626,7 @@ export default function DashboardV2() {
                       <TooltipComponent
                         position="right-bottom"
                         className="nowrap"
-                        handle={`$${formatAmount(currentFees?.[chainId], USD_DECIMALS, 2, true)}`}
+                        handle={0}
                         renderContent={() => (
                           <StatsTooltip
                             title={t`Fees`}
@@ -674,7 +655,7 @@ export default function DashboardV2() {
                     <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
-                      handle={`$${numberWithCommas(totalFees?.[chainId])}`}
+                      handle={0}
                       renderContent={() => (
                         <StatsTooltip
                           title={t`Total Fees`}
@@ -695,7 +676,7 @@ export default function DashboardV2() {
                     <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
-                      handle={`$${formatAmount(totalVolume?.[chainId], USD_DECIMALS, 0, true)}`}
+                      handle={0}
                       renderContent={() => (
                         <StatsTooltip
                           title={t`Total Volume`}
@@ -711,7 +692,7 @@ export default function DashboardV2() {
                   <div className="label">
                     <Trans>Floor Price Fund</Trans>
                   </div>
-                  <div>${formatAmount(totalFloorPriceFundUsd, 30, 0, true)}</div>
+                  <div>${0}</div>
                 </div>
               </div>
             </div>
@@ -755,17 +736,17 @@ export default function DashboardV2() {
                           <TooltipComponent
                             position="right-bottom"
                             className="nowrap"
-                            handle={"$" + formatAmount(gmxPrice, USD_DECIMALS, 2, true)}
+                            handle={0}
                             renderContent={() => (
                               <>
                                 <StatsTooltipRow
                                   label={t`Price on Arbitrum`}
-                                  value={formatAmount(gmxPriceFromArbitrum, USD_DECIMALS, 2, true)}
+                                  value={0}
                                   showDollar={true}
                                 />
                                 <StatsTooltipRow
                                   label={t`Price on Avalanche`}
-                                  value={formatAmount(gmxPriceFromAvalanche, USD_DECIMALS, 2, true)}
+                                  value={0}
                                   showDollar={true}
                                 />
                               </>
@@ -778,7 +759,7 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Supply</Trans>
                       </div>
-                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} GMX</div>
+                      <div>{0} GMX</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
@@ -788,7 +769,7 @@ export default function DashboardV2() {
                         <TooltipComponent
                           position="right-bottom"
                           className="nowrap"
-                          handle={`$${formatAmount(stakedGmxSupplyUsd, USD_DECIMALS, 0, true)}`}
+                          handle={0}
                           renderContent={() => (
                             <StatsTooltip
                               title={t`Staked`}
@@ -806,50 +787,13 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Market Cap</Trans>
                       </div>
-                      <div>${formatAmount(gmxMarketCap, USD_DECIMALS, 0, true)}</div>
+                      <div>${0}</div>
                     </div>
                   </div>
                 </div>
                 <div className="stats-piechart" onMouseLeave={onGMXDistributionChartLeave}>
-                  {gmxDistributionData.length > 0 && (
-                    <PieChart width={210} height={210}>
-                      <Pie
-                        data={gmxDistributionData}
-                        cx={100}
-                        cy={100}
-                        innerRadius={73}
-                        outerRadius={80}
-                        fill="#8884d8"
-                        dataKey="value"
-                        startAngle={90}
-                        endAngle={-270}
-                        paddingAngle={2}
-                        onMouseEnter={onGMXDistributionChartEnter}
-                        onMouseOut={onGMXDistributionChartLeave}
-                        onMouseLeave={onGMXDistributionChartLeave}
-                      >
-                        {gmxDistributionData.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={entry.color}
-                            style={{
-                              filter:
-                                gmxActiveIndex === index
-                                  ? `drop-shadow(0px 0px 6px ${hexToRgba(entry.color, 0.7)})`
-                                  : "none",
-                              cursor: "pointer",
-                            }}
-                            stroke={entry.color}
-                            strokeWidth={gmxActiveIndex === index ? 1 : 1}
-                          />
-                        ))}
-                      </Pie>
-                      <text x={"50%"} y={"50%"} fill="white" textAnchor="middle" dominantBaseline="middle">
-                        <Trans>Distribution</Trans>
-                      </text>
-                      <Tooltip content={<CustomTooltip />} />
-                    </PieChart>
-                  )}
+                  
+                  
                 </div>
               </div>
               <div className="App-card">
@@ -908,45 +852,7 @@ export default function DashboardV2() {
                   </div>
                 </div>
                 <div className="stats-piechart" onMouseOut={onGLPPoolChartLeave}>
-                  {glpPool.length > 0 && (
-                    <PieChart width={210} height={210}>
-                      <Pie
-                        data={glpPool}
-                        cx={100}
-                        cy={100}
-                        innerRadius={73}
-                        outerRadius={80}
-                        fill="#8884d8"
-                        dataKey="value"
-                        startAngle={90}
-                        endAngle={-270}
-                        onMouseEnter={onGLPPoolChartEnter}
-                        onMouseOut={onGLPPoolChartLeave}
-                        onMouseLeave={onGLPPoolChartLeave}
-                        paddingAngle={2}
-                      >
-                        {glpPool.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={GLP_POOL_COLORS[entry.name]}
-                            style={{
-                              filter:
-                                glpActiveIndex === index
-                                  ? `drop-shadow(0px 0px 6px ${hexToRgba(GLP_POOL_COLORS[entry.name], 0.7)})`
-                                  : "none",
-                              cursor: "pointer",
-                            }}
-                            stroke={GLP_POOL_COLORS[entry.name]}
-                            strokeWidth={glpActiveIndex === index ? 1 : 1}
-                          />
-                        ))}
-                      </Pie>
-                      <text x={"50%"} y={"50%"} fill="white" textAnchor="middle" dominantBaseline="middle">
-                        GLP Pool
-                      </text>
-                      <Tooltip content={<CustomTooltip />} />
-                    </PieChart>
-                  )}
+                  
                 </div>
               </div>
             </div>
@@ -1016,25 +922,7 @@ export default function DashboardV2() {
                             renderContent={() => {
                               return (
                                 <>
-                                  <StatsTooltipRow
-                                    label={t`Pool Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "managedAmount", token.decimals, 0, true)} ${
-                                      token.symbol
-                                    }`}
-                                    showDollar={false}
-                                  />
-                                  <StatsTooltipRow
-                                    label={t`Target Min Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "bufferAmount", token.decimals, 0, true)} ${
-                                      token.symbol
-                                    }`}
-                                    showDollar={false}
-                                  />
-                                  <StatsTooltipRow
-                                    label={t`Max ${tokenInfo.symbol} Capacity`}
-                                    value={formatAmount(maxUsdgAmount, 18, 0, true)}
-                                    showDollar={true}
-                                  />
+                                  
                                 </>
                               );
                             }}
@@ -1084,36 +972,7 @@ export default function DashboardV2() {
                         <div className="label">
                           <Trans>Pool</Trans>
                         </div>
-                        <div>
-                          <TooltipComponent
-                            handle={`$${formatKeyAmount(tokenInfo, "managedUsd", USD_DECIMALS, 0, true)}`}
-                            position="right-bottom"
-                            renderContent={() => {
-                              return (
-                                <>
-                                  <StatsTooltipRow
-                                    label={t`Pool Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "managedAmount", token.decimals, 0, true)} ${
-                                      token.symbol
-                                    }`}
-                                    showDollar={false}
-                                  />
-                                  <StatsTooltipRow
-                                    label={t`Target Min Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "bufferAmount", token.decimals, 0, true)} ${
-                                      token.symbol
-                                    }`}
-                                    showDollar={false}
-                                  />
-                                  <StatsTooltipRow
-                                    label={t`Max ${tokenInfo.symbol} Capacity`}
-                                    value={formatAmount(maxUsdgAmount, 18, 0, true)}
-                                  />
-                                </>
-                              );
-                            }}
-                          />
-                        </div>
+                        
                       </div>
                       <div className="App-card-row">
                         <div className="label">

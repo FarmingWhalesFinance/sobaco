@@ -2,11 +2,13 @@
   max-width: 155rem;
   margin: auto;
   justify-content: space-between;
+  
+  
 }
 
 .Exchange-trigger-order-info,
 .Exchange-trigger-order-info a {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   border: 1px solid #23263b;
 }
 
@@ -17,6 +19,7 @@
   padding-right: 0.8rem;
   margin-top: 1.5rem;
   margin-bottom: 1.05rem;
+  
 }
 
 .Exchange-should-show-position-lines {
@@ -45,6 +48,7 @@
 
 .Exchange-settings .App-cta {
   margin-top: 1.5rem;
+  background-color: aqua;
 }
 
 .Exchange-content {
@@ -54,6 +58,8 @@
   padding: 3.1rem;
   padding-top: 0rem;
   margin-top: -1.5rem;
+  
+  
 }
 
 .Exchange-position-list-orders {
@@ -71,6 +77,9 @@
 .Exchange-right {
   display: grid;
   grid-template-rows: auto 1fr;
+ 
+  
+  
 }
 
 .Exchange-leverage-slider-settings {
@@ -120,7 +129,7 @@
 }
 
 .Exchange-swap-connect-wallet:hover {
-  background: #272e33;
+  background: #37036d;
   border-radius: 0.6rem;
 }
 
@@ -255,6 +264,8 @@
 .ExchangeChart {
   position: relative;
   height: 49.6rem;
+ 
+  
 }
 
 .ExchangeChart-main-price {
@@ -277,6 +288,7 @@
   grid-column-gap: 4.65rem;
   align-items: center;
   padding-left: 0.3rem;
+  
 }
 
 .ExchangeChart-dollar-sign {
@@ -296,6 +308,8 @@
   top: 0;
   height: auto;
   z-index: 2;
+
+  
 }
 
 .ExchangeChart.tv .ExchangeChart-top {
@@ -335,7 +349,7 @@
   z-index: 2;
 }
 .ExchangeChart-bottom-stats-label {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   font-weight: bold;
 }
 .ExchangeChart-bottom-stats-value {
@@ -369,9 +383,9 @@
 
 .Exchange-price-tooltip {
   font-size: var(--font-sm);
-  background: linear-gradient(90deg, rgba(57, 28, 147, 0.9) 0%, rgba(66, 24, 140, 0.9) 100%);
+  background-color: #5d39a9;
   padding: 0.9rem;
-  border: 1px solid rgba(30, 9, 94, 0.5);
+  border: black;
   line-height: 2rem;
 }
 
@@ -401,6 +415,7 @@
   padding-right: 0.5rem;
   margin: 1.5rem;
   margin-right: 1rem;
+  
 }
 
 .PositionEditor .Tab {
@@ -418,6 +433,8 @@
   right: 0;
   top: 0;
   bottom: 0;
+  
+  
 }
 
 .Exchange-list-modal .Modal-content {
@@ -444,6 +461,9 @@
 
 .Exchange-list .App-card {
   margin-bottom: 1.5rem;
+  background-color: #5d39a9;
+
+  
 }
 
 .Exchange-list-item-error {
@@ -462,16 +482,17 @@ button.Exchange-list-action {
   border-radius: 3px;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   margin: 0 0.3rem;
 }
 
 button.Exchange-list-action:hover {
-  color: rgba(255, 255, 255, 1);
+  color: white;;
 }
 
 table.Exchange-list {
   border-collapse: collapse;
+  
 }
 
 table.Exchange-list th,
@@ -488,20 +509,20 @@ table.Exchange-list.Orders td {
 }
 
 table.Exchange-list tr {
-  border-bottom: 1px solid #23263b;
+  border-bottom: black;
 }
 
 table.Exchange-list tr:last-child {
   border-bottom: none;
 }
 
-table.Exchange-list tr:hover {
-  background: linear-gradient(90deg, rgba(30, 34, 61, 1) 0%, rgba(38, 43, 71, 1) 100%);
-  box-shadow: inset 0px 0px 3rem 0.5rem rgba(255, 255, 255, 0.01);
+table.Exchange-list tr:hover {  
+  background: #361972;
+  box-shadow: #361972;
 }
 
 table.Exchange-list tr.Exchange-list-header {
-  background: none;
+  background: #5d39a9;
   font-size: var(--font-md);
 }
 
@@ -512,6 +533,7 @@ table.Exchange-list tr.Exchange-list-header th {
 
 table.Exchange-list th {
   opacity: 0.7;
+  
 }
 
 .Exchange-leverage-box {
@@ -530,7 +552,7 @@ table.Exchange-list th {
 }
 
 .Exchange-info-row.top-line {
-  border-top: 1px solid #23263b;
+  border-top:  black;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
 }
@@ -574,6 +596,8 @@ table.Exchange-list th {
   width: 41.85rem;
   display: grid;
   position: relative;
+  
+ 
 }
 
 .Exchange-swap-market-box-title {
@@ -583,6 +607,7 @@ table.Exchange-list th {
 
 .Exchange-swap-box-inner {
   padding: 1.5rem;
+  background: #fa3c58;
 }
 
 .Exchange-swap-market-box {
@@ -593,6 +618,7 @@ table.Exchange-list th {
 
 .Exchange-swap-market-box .App-card-divider {
   margin: 0 -1.5rem 1.5rem;
+  
 }
 
 .Exchange-swap-box .Radio {
@@ -626,6 +652,7 @@ table.Exchange-list th {
   bottom: 0;
   overflow: hidden;
   border: none;
+  background-color: black;
 }
 .Exchange-swap-box .TokenSelector .Modal-content .Modal-body {
   scroll-margin-right: 38.75rem;
@@ -644,8 +671,8 @@ table.Exchange-list th {
   padding: 1.5rem;
   margin-bottom: 1.05rem;
   border-radius: 0.3rem;
-  background: linear-gradient(90deg, rgba(30, 34, 61, 0.9) 0%, rgba(38, 43, 71, 0.9) 100%);
-  box-shadow: inset 0px 0px 3rem 0.5rem rgba(255, 255, 255, 0.01);
+  background: #37036d;
+  box-shadow: #37036d;
 }
 
 .Exchange-swap-option-tabs.Tab.block .Tab-option {
@@ -693,17 +720,17 @@ table.Exchange-list th {
   top: 0;
   padding: 0.465rem 0.8rem;
   color: #fff;
-  outline: 1rem solid rgba(33, 37, 64, 1);
+  outline: 1rem solid #37036d;
   border-radius: 3px;
   z-index: 1;
   cursor: pointer;
   font-size: var(--font-sm);
-  background: linear-gradient(90deg, rgba(45, 66, 252, 1) 0%, rgba(46, 61, 205, 1) 100%);
+  background: #37036d;
 }
 
 .Exchange-swap-max:hover {
-  color: rgba(255, 255, 255, 1);
-  background: linear-gradient(90deg, rgba(58, 78, 252, 1) 0%, rgba(51, 68, 222, 1) 100%);
+  color: white;;
+  background: #37036d;
 }
 
 .Exchange-swap-section-bottom .TokenSelector-box {
@@ -728,11 +755,13 @@ input.Exchange-swap-input.small {
 
 .Exchange-swap-button-container {
   padding-top: 0.31rem;
+ 
 }
 
 .Exchange-swap-button {
   display: block;
   width: 100%;
+  
 }
 
 .Exchange-swap-ball-container {
@@ -758,14 +787,14 @@ input.Exchange-swap-input.small {
   border-radius: 3.1rem;
   cursor: pointer;
   user-select: none;
-  background: linear-gradient(90deg, rgba(45, 66, 252, 1) 0%, rgba(46, 61, 205, 1) 100%);
+  background: #5d39a9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .Exchange-swap-ball:hover {
-  background: linear-gradient(90deg, rgba(58, 78, 252, 1) 0%, rgba(51, 68, 222, 1) 100%);
+  background: #361972;
 }
 
 .Exchange-swap-ball:hover .Exchange-swap-ball-icon {
@@ -774,7 +803,7 @@ input.Exchange-swap-input.small {
 
 table.Exchange-list-small {
   width: 100%;
-  background: linear-gradient(45deg, rgba(11, 5, 55, 0.6) 0%, rgba(21, 3, 48, 0.6) 100%);
+  background: #47abea;
 }
 
 table.Exchange-list-small th,
@@ -844,6 +873,7 @@ table.Exchange-list-small td {
 .Confirmation-box-button {
   margin-top: 1rem;
   width: 100%;
+  
 }
 
 .Exchange-footer {
@@ -943,10 +973,12 @@ table.Exchange-list-small td {
 
   .ExchangeChart {
     height: 38.75rem;
+    background-color: black;
   }
 
   .Exchange-content {
     grid-template-columns: 1fr;
+    background-color: black;
   }
 
   .Exchange-lists.large {
@@ -1030,6 +1062,7 @@ table.Exchange-list-small td {
   .ExchangeChart-top-inner {
     grid-template-columns: auto auto auto;
     grid-column-gap: 0.8rem;
+    background-color: black;
   }
 
   .ExchangeChart-title {
@@ -1043,11 +1076,13 @@ table.Exchange-list-small td {
   .Exchange-content {
     padding: 1.5rem;
     padding-top: 1.5rem;
+    background-color: black;
   }
   .Exchange-swap-box .TokenSelector .Modal {
     margin: 0 1.5rem;
   }
   .Exchange {
     padding-top: 1.5rem !important;
+    background-color: black;
   }
 }

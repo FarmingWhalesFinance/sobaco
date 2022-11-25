@@ -80,7 +80,7 @@
   line-height: 1.8rem;
   font-weight: normal;
   letter-spacing: 0.1px;
-  color: #a0a3c4;
+  color: #47abea;
   padding: 1.5rem 1.6rem;
   text-decoration: none;
   display: block;
@@ -93,7 +93,7 @@
 .App-header-drawer .App-header-link-container a:focus,
 .App-header-drawer .App-header-link-container a.active {
   background: #303fd024;
-  color: white;
+  color: #47abea;
 }
 
 .App-header-links-header {
@@ -138,13 +138,7 @@
 }
 
 .App-highlight-box {
-  background: linear-gradient(
-    45deg,
-    rgba(80, 10, 245, 1) 0%,
-    rgba(43, 118, 224, 1) 35%,
-    rgba(7, 157, 250, 1) 77%,
-    rgba(2, 207, 207, 1) 100%
-  );
+  background: #37036d;
   border-radius: 0.3rem;
   box-shadow: 0 0 0.4rem 0.6rem rgba(45, 66, 252, 0.15);
 }
@@ -206,7 +200,7 @@
   line-height: 2.1rem;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #ffffff;
+  color: #47abea;
 }
 
 .App-card-long_sub__info___subtitle {
@@ -214,7 +208,7 @@
   line-height: 1.5rem;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #a0a3c4;
+  color: #47abea;
 }
 
 .App-card-long-sub-left {
@@ -246,7 +240,7 @@
 .App-card-divider-vertical {
   width: 1px;
   height: 8.8rem;
-  background: #a0a3c4;
+  background: #47abea;
 }
 
 .App-card-long_sub:first-child {
@@ -255,7 +249,7 @@
 }
 
 .App-card-long_sub__title {
-  color: #a0a3c4;
+  color: white;
   font-size: var(--font-sm);
   line-height: 1.8rem;
   font-weight: normal;
@@ -291,7 +285,7 @@
   line-height: 2.1rem;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #ffffff;
+  color: #47abea;
 }
 
 .App-card-info-subtitle {
@@ -299,7 +293,7 @@
   line-height: 1.5rem;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #a9a9b0;
+  color: #47abea;
 }
 
 .App-card-title-iconlist {
@@ -536,7 +530,7 @@ button.App-connect-wallet:hover {
 
 .App-card {
   padding: 1.5rem 1.5rem 1.86rem;
-  border: 1px solid #1e2136;
+  border: 1px solid #37036d;
   border-radius: 0.4rem;
   font-size: var(--font-base);
 }
@@ -624,13 +618,13 @@ button.App-connect-wallet:hover {
 .App-header a.active {
   pointer-events: none;
   opacity: 1;
-  color: #eee;
+  color: white;
 }
 
 .App-header .a:hover,
 .App-header a:hover {
   opacity: 1;
-  color: #eee;
+  color: white;
 }
 
 .App-header-container-left .a,
@@ -791,14 +785,14 @@ a.App-cta,
 button.App-cta {
   color: white;
   text-decoration: none;
-  background: linear-gradient(90deg, rgba(45, 66, 252, 1) 0%, rgba(46, 61, 205, 1) 100%);
+  background-color: #5d39a9;
   /* box-shadow: 0 0 0.4rem 0.6rem rgba(45,66,252,0.15); */
 }
 
 a.App-cta:hover,
 button.App-cta:hover:enabled {
-  background: linear-gradient(90deg, rgba(58, 78, 252, 1) 0%, rgba(51, 68, 222, 1) 100%);
-  box-shadow: 0 0 0.4rem 0.6rem rgba(45, 66, 252, 0.2);
+  background: #1c0d3c;
+  box-shadow: #1c0d3c;
 }
 
 .App-cta.small {
@@ -809,7 +803,7 @@ a.App-cta.transparent,
 button.App-cta.transparent {
   box-shadow: none;
   background: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   opacity: 1;
 }
 
@@ -844,13 +838,13 @@ button.App-button-option {
   display: inline-flex !important;
   align-items: center;
   border: none;
-  background: rgba(43, 55, 94, 1);
+  background-color: #5d39a9;
 }
 
 a.App-button-option:hover,
 button.App-button-option:hover:enabled {
-  background: linear-gradient(90deg, rgba(58, 78, 252, 1) 0%, rgba(51, 68, 222, 1) 100%);
-  box-shadow: 0 0 0.4rem 0.6rem rgba(45, 66, 252, 0.2);
+  background-color: #5d39a9;
+  box-shadow: #5d39a9;
 }
 
 button.App-button-option:disabled {
@@ -934,6 +928,7 @@ button.App-button-option:disabled {
   position: fixed;
   bottom: 5vh;
   text-align: center;
+ 
 }
 
 a.App-social-link {
@@ -983,8 +978,8 @@ a.App-social-link:hover {
 }
 
 .App-input-container {
-  border: 2px solid rgba(48, 31, 130, 0.8);
-  background: rgba(0, 0, 0, 0.1);
+  border: 2px #17c2e7;
+  background-color: #5d39a9;
   display: grid;
   grid-template-columns: 1fr auto;
 }
@@ -1105,11 +1100,11 @@ button.App-button {
 }
 
 .App-slider .rc-slider-rail {
-  background: linear-gradient(90deg, rgba(30, 34, 61, 1) 0%, rgba(40, 45, 74, 1) 100%);
+  background-color: #5d39a9;
 }
 
 .App-slider .rc-slider-track {
-  background: linear-gradient(90deg, rgba(46, 61, 205, 1) 0%, rgba(45, 66, 252, 1) 100%);
+  background: white;
 }
 
 .App-slider .rc-slider-dot {
@@ -1121,16 +1116,16 @@ button.App-button {
 }
 
 .App-slider .rc-slider-dot-active {
-  background: #3d51ff;
+  background: #5d39a9;
 }
 
 .App-slider .rc-slider-handle {
-  background: #303652;
-  border: solid 2px rgba(45, 66, 252, 1);
+  background: white;
+  border: solid 2px rgb(246, 160, 12);
 }
 
 .App-slider .rc-slider-handle:active {
-  box-shadow: 0 0 0.4rem 0.6rem rgba(45, 66, 252, 0.2);
+  box-shadow: 0 0 0.4rem 0.6rem #5d39a9;
 }
 
 .App-slider .rc-slider-mark-text,
@@ -1332,7 +1327,7 @@ button.App-button {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .App-header-link-main img.big {
     display: none;
   }
@@ -1433,4 +1428,51 @@ button.App-button {
   to {
     transform: rotate(360deg);
   }
+}
+.Exchange-swap-market-box {
+  background-color: #361972;
+  
+}
+
+.Exchange-swap-box-inner {
+  background-color: #361972;
+  
+
+}
+
+.ExchangeChart-top{
+  background-color: #361972;
+  
+
+}
+
+.App-content{
+  background-color: #1c0d3c;
+}
+
+.ExchangeChart-bottom {
+  background-color: #160b2d;
+
+}
+.EchangeChart-bottom-header {
+  background-color: #160b2d;
+
+}
+
+.Position-List {
+  background-color: #160b2d;
+}
+
+.TradeHistory-row{
+  background-color: #160b2d;
+}
+
+.Exchange-list-header {
+  background-color: #160b2d;
+
+}
+
+
+.Exchange-list {
+  background-color: #160b2d;
 }

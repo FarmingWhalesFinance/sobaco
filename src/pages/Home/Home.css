@@ -51,7 +51,7 @@
 }
 
 .Home-benefits-section {
-  background: #17182c;
+  background: #37036d;
 }
 
 .Home-benefits {
@@ -90,7 +90,7 @@
 }
 
 .Home-cta-section {
-  background: #101124;
+  background: #37036d;
 }
 
 .Home-cta-container {
@@ -152,7 +152,7 @@
   display: block;
   padding: 1.5rem;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: #37036d;
   border-radius: 0.3rem;
   margin-top: 3.1rem;
 }
@@ -202,7 +202,7 @@
 .Home-token-card-section {
   padding-top: 7.75rem;
   padding-bottom: 7.75rem;
-  background: #17182c;
+  background: #37036d;
   margin-bottom: -4.65rem;
 }
 
@@ -229,7 +229,7 @@
   padding: 2.325rem;
   border-radius: 1.3rem;
   max-width: 59.2rem;
-  background: #16182e;
+  background: #37036d;
   box-shadow: 0px 0.5rem 1.3rem #00000085;
   border: 1px solid #2a2b3d;
   border-radius: 4px;
@@ -352,7 +352,7 @@
 }
 
 .Home-faqs-section {
-  background: #101124;
+  background: #37036d;
   padding: 8rem 0;
 }
 
@@ -389,7 +389,7 @@
 }
 
 .Home-faqs-content {
-  background: #17182c;
+  background: #37036d;
   border: 1px solid #1e2136;
   border-radius: 4px;
   cursor: pointer;
@@ -399,7 +399,7 @@
 }
 
 .Home-faqs-content:hover {
-  background: #17182c55;
+  background: #37036d;
 }
 
 .Home-faqs-content + .Home-faqs-content {

@@ -153,13 +153,13 @@
 .App-header a.active {
   pointer-events: none;
   opacity: 1;
-  color: #eee;
+  color: white;
 }
 
 .App-header .a:hover,
 .App-header a:hover {
   opacity: 1;
-  color: #eee;
+  color: white;
 }
 
 .App-header-container-left .a,

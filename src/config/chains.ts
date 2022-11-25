@@ -7,7 +7,7 @@ const { parseEther } = ethers.utils;
 export const MAINNET = 56;
 export const AVALANCHE = 43114;
 export const TESTNET = 97;
-export const ARBITRUM_TESTNET = 421611;
+export const ARBITRUM_TESTNET = 43113;
 export const ARBITRUM = 42161;
 
 // TODO take it from web3
@@ -28,7 +28,7 @@ export const IS_NETWORK_DISABLED = {
 export const CHAIN_NAMES_MAP = {
   [MAINNET]: "BSC",
   [TESTNET]: "BSC Testnet",
-  [ARBITRUM_TESTNET]: "ArbRinkeby",
+  [ARBITRUM_TESTNET]: "Avalanche FUJI",
   [ARBITRUM]: "Arbitrum",
   [AVALANCHE]: "Avalanche",
 };
@@ -104,6 +104,7 @@ const constants = {
     // contract requires that execution fee be strictly greater than instead of gte
     DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0100001"),
   },
+  
 };
 
 const ALCHEMY_WHITELISTED_DOMAINS = ["gmx.io", "app.gmx.io"];
@@ -173,14 +174,14 @@ export const NETWORK_METADATA: { [chainId: number]: NetworkMetadata } = {
   },
   [ARBITRUM_TESTNET]: {
     chainId: "0x" + ARBITRUM_TESTNET.toString(16),
-    chainName: "Arbitrum Testnet",
+    chainName: "Avalanche FUJI C-Chain",
     nativeCurrency: {
       name: "ETH",
       symbol: "ETH",
       decimals: 18,
     },
-    rpcUrls: ["https://rinkeby.arbitrum.io/rpc"],
-    blockExplorerUrls: ["https://rinkeby-explorer.arbitrum.io/"],
+    rpcUrls: ["https://api.avax-test.network/ext/bc/C/rpc"],
+    blockExplorerUrls: ["https://testnet.snowtrace.io/"],
   },
   [ARBITRUM]: {
     chainId: "0x" + ARBITRUM.toString(16),
@@ -250,7 +251,7 @@ export function getExplorerUrl(chainId) {
   } else if (chainId === TESTNET) {
     return "https://testnet.bscscan.com/";
   } else if (chainId === ARBITRUM_TESTNET) {
-    return "https://testnet.arbiscan.io/";
+    return "https://testnet.snowtrace.io/";
   } else if (chainId === ARBITRUM) {
     return "https://arbiscan.io/";
   } else if (chainId === AVALANCHE) {
